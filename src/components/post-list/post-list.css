@@ -1,0 +1,23 @@
+.app-list {
+  margin-top: 20px;
+  position: relative;
+}
+
+.app-list .list-group-item {
+  padding: 20px 35px 10px 35px;
+  margin-top: 10px;
+  /* transform: translateY(20px) */
+  animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-bottom {
+  0% {
+    transform: translateY(-40px);
+    opacity: .4;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
